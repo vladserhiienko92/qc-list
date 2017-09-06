@@ -11,8 +11,7 @@
     <link rel="stylesheet" type="text/css" href="Content/css/ion.rangeSlider.css">
     <link rel="stylesheet" type="text/css" href="Content/css/ion.rangeSlider.skinFlat.css">
     <link rel="stylesheet" type="text/css" href="Content/css/pointhr.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto:300,400,500,700" rel="stylesheet">
     <script src="https://use.fontawesome.com/cece73aa03.js"></script>
 </head>
 
@@ -54,7 +53,7 @@
         <div class="container">
             <h1 class="title">Quality control</h1>
             <div class="arrow-back">
-                <span class="arrow-span"></span>
+                <span class="arrow-span"><</span>
                 <a href="#">Back to dashboard</a>
             </div>
         </div>
@@ -80,12 +79,12 @@
                         <p class="client-name">Employee Middle Name: <span>Middlename</span></p>
                         <p class="client-label">Documents used</p>
                         <div class="audit-option qc-option">
-                            <input id="option1" type="radio" name="group" value="option1">
+                            <input ng-click="radio = 1" id="option1" type="radio" name="group" value="option1">
                             <label for="option1">Yes</label>
                         </div>
                         <div class="audit-option qc-option">
-                            <input id="option2" type="radio" name="group" value="option1">
-                            <label for="option2">No</label>
+                            <input ng-click="radio = 1" id="option1" type="radio" name="group" value="option1">
+                            <label for="option1">No</label>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-12 client-info1">
@@ -118,12 +117,12 @@
                                     <p class="client-label">Name entered line 1</p>
                                     <form action="#">
                                         <div class="audit-option qc-option">
-                                            <input id="option3" type="radio" name="group" value="option1">
-                                            <label for="option3">Yes</label>
+                                            <input ng-click="radio = 1" id="option1" type="radio" name="group" value="option1">
+                                            <label for="option1">Yes</label>
                                         </div>
                                         <div class="audit-option qc-option">
-                                            <input id="option4" type="radio" name="group" value="option1">
-                                            <label for="option4">No</label>
+                                            <input ng-click="radio = 1" id="option1" type="radio" name="group" value="option1">
+                                            <label for="option1">No</label>
                                         </div>
                                     </form>
                                 </div>
@@ -131,12 +130,12 @@
                                     <p class="client-label">DOB</p>
                                     <form action="#">
                                         <div class="audit-option qc-option">
-                                            <input id="option5" type="radio" name="group" value="option1">
-                                            <label for="option5">Yes</label>
+                                            <input ng-click="radio = 1" id="option1" type="radio" name="group" value="option1">
+                                            <label for="option1">Yes</label>
                                         </div>
                                         <div class="audit-option qc-option">
-                                            <input id="option6" type="radio" name="group" value="option1">
-                                            <label for="option6">No</label>
+                                            <input ng-click="radio = 1" id="option1" type="radio" name="group" value="option1">
+                                            <label for="option1">No</label>
                                         </div>
                                     </form>
                                 </div>
@@ -146,12 +145,12 @@
                                     <p class="client-label">Address complete</p>
                                     <form action="#">
                                         <div class="audit-option qc-option">
-                                            <input id="option7" type="radio" name="group" value="option1">
-                                            <label for="option7">Yes</label>
+                                            <input ng-click="radio = 1" id="option1" type="radio" name="group" value="option1">
+                                            <label for="option1">Yes</label>
                                         </div>
                                         <div class="audit-option qc-option">
-                                            <input id="option8" type="radio" name="group" value="option1">
-                                            <label for="option8">No</label>
+                                            <input ng-click="radio = 1" id="option1" type="radio" name="group" value="option1">
+                                            <label for="option1">No</label>
                                         </div>
                                     </form>
                                 </div>
@@ -159,12 +158,12 @@
                                     <p class="client-label">SSN</p>
                                     <form action="#">
                                         <div class="audit-option qc-option">
-                                            <input id="option9" type="radio" name="group" value="option1">
-                                            <label for="option9">Yes</label>
+                                            <input ng-click="radio = 1" id="option1" type="radio" name="group" value="option1">
+                                            <label for="option1">Yes</label>
                                         </div>
                                         <div class="audit-option qc-option">
-                                            <input id="option10" type="radio" name="group" value="option1">
-                                            <label for="option10">No</label>
+                                            <input ng-click="radio = 1" id="option1" type="radio" name="group" value="option1">
+                                            <label for="option1">No</label>
                                         </div>
                                     </form>
                                 </div>
@@ -175,24 +174,19 @@
                             <h4>Citizenship</h4>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <label for="form-used2" class="client-label padding-left">Citizenship selected</label>
-                                    <select id="form-used2" class="qc-select">
-                                        <option value="Choose client">Enter date of expiration</option>
-                                        <option value="Choose client1">Enter date of expiration</option>
-                                        <option value="Choose client2">Enter date of expiration</option>
-                                        <option value="Choose client3">Enter date of expiration</option>
-                                    </select>
+                                    <label for="form-used" class="client-label padding-left">Citizenship selected</label>
+                                    <input type="date" id="form-used" class="qc-date">
                                 </div>
                                 <div class="col-md-6">
                                     <p class="client-label">If option 3 is there an Alien number entered</p>
                                     <form action="#">
                                         <div class="audit-option qc-option">
-                                            <input id="option11" type="radio" name="group" value="option1">
-                                            <label for="option11">Yes</label>
+                                            <input ng-click="radio = 1" id="option1" type="radio" name="group" value="option1">
+                                            <label for="option1">Yes</label>
                                         </div>
                                         <div class="audit-option qc-option">
-                                            <input id="option12" type="radio" name="group" value="option1">
-                                            <label for="option12">No</label>
+                                            <input ng-click="radio = 1" id="option1" type="radio" name="group" value="option1">
+                                            <label for="option1">No</label>
                                         </div>
                                     </form>
                                 </div>
@@ -202,12 +196,12 @@
                                     <p class="client-label">If option 4 enter Date of expiration</p>
                                     <form action="#">
                                         <div class="audit-option qc-option">
-                                            <input id="option13" type="radio" name="group" value="option1">
-                                            <label for="option13">Yes</label>
+                                            <input ng-click="radio = 1" id="option1" type="radio" name="group" value="option1">
+                                            <label for="option1">Yes</label>
                                         </div>
                                         <div class="audit-option qc-option">
-                                            <input id="option14" type="radio" name="group" value="option1">
-                                            <label for="option14">No</label>
+                                            <input ng-click="radio = 1" id="option1" type="radio" name="group" value="option1">
+                                            <label for="option1">No</label>
                                         </div>
                                     </form>
                                 </div>
@@ -215,12 +209,12 @@
                                     <p class="client-label">If option 4 is alien number entered</p>
                                     <form action="#">
                                         <div class="audit-option qc-option">
-                                            <input id="option15" type="radio" name="group" value="option1">
-                                            <label for="option15">Yes</label>
+                                            <input ng-click="radio = 1" id="option1" type="radio" name="group" value="option1">
+                                            <label for="option1">Yes</label>
                                         </div>
                                         <div class="audit-option qc-option">
-                                            <input id="option16" type="radio" name="group" value="option1">
-                                            <label for="option16">No</label>
+                                            <input ng-click="radio = 1" id="option1" type="radio" name="group" value="option1">
+                                            <label for="option1">No</label>
                                         </div>
                                     </form>
                                 </div>
@@ -234,36 +228,31 @@
                                     <p class="client-label">Was list A used</p>
                                     <form action="#">
                                         <div class="audit-option qc-option">
-                                            <input id="option17" type="radio" name="group" value="option1">
-                                            <label for="option17">Yes</label>
+                                            <input ng-click="radio = 1" id="option1" type="radio" name="group" value="option1">
+                                            <label for="option1">Yes</label>
                                         </div>
                                         <div class="audit-option qc-option">
-                                            <input id="option18" type="radio" name="group" value="option1">
-                                            <label for="option18">No</label>
+                                            <input ng-click="radio = 1" id="option1" type="radio" name="group" value="option1">
+                                            <label for="option1">No</label>
                                         </div>
                                     </form>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <label for="form-used3" class="client-label padding-left">Document used (List A)</label>
-                                    <select id="form-used3" class="qc-select">
-                                        <option value="Choose client">Enter date of expiration</option>
-                                        <option value="Choose client1">Enter date of expiration</option>
-                                        <option value="Choose client2">Enter date of expirationt</option>
-                                        <option value="Choose client3">Enter date of expiration</option>
-                                    </select>
+                                    <label for="form-used" class="client-label padding-left">Document used (List A)</label>
+                                    <input type="date" id="form-used" class="qc-date">
                                 </div>
                                 <div class="col-md-6">
                                     <p class="client-label">Number (List B)</p>
                                     <form action="#">
                                         <div class="audit-option qc-option">
-                                            <input id="option19" type="radio" name="group" value="option1">
-                                            <label for="option19">Yes</label>
+                                            <input ng-click="radio = 1" id="option1" type="radio" name="group" value="option1">
+                                            <label for="option1">Yes</label>
                                         </div>
                                         <div class="audit-option qc-option">
-                                            <input id="option20" type="radio" name="group" value="option1">
-                                            <label for="option20">No</label>
+                                            <input ng-click="radio = 1" id="option1" type="radio" name="group" value="option1">
+                                            <label for="option1">No</label>
                                         </div>
                                     </form>
                                 </div>
@@ -273,12 +262,12 @@
                                     <p class="client-label">Issuing authority (List A)</p>
                                     <form action="#">
                                         <div class="audit-option qc-option">
-                                            <input id="option21" type="radio" name="group" value="option1">
-                                            <label for="option21">Yes</label>
+                                            <input ng-click="radio = 1" id="option1" type="radio" name="group" value="option1">
+                                            <label for="option1">Yes</label>
                                         </div>
                                         <div class="audit-option qc-option">
-                                            <input id="option22" type="radio" name="group" value="option1">
-                                            <label for="option22">No</label>
+                                            <input ng-click="radio = 1" id="option1" type="radio" name="group" value="option1">
+                                            <label for="option1">No</label>
                                         </div>
                                     </form>
                                 </div>
@@ -286,16 +275,16 @@
                                     <p class="client-label">Expiration (List B)</p>
                                     <form action="#">
                                         <div class="audit-option qc-option2">
-                                            <input id="option23" type="radio" name="group" value="option1">
-                                            <label for="option23">Yes</label>
+                                            <input ng-click="radio = 1" id="option1" type="radio" name="group" value="option1">
+                                            <label for="option1">Yes</label>
                                         </div>
                                         <div class="audit-option qc-option2">
-                                            <input id="option24" type="radio" name="group" value="option1">
-                                            <label for="option24">No</label>
+                                            <input ng-click="radio = 1" id="option1" type="radio" name="group" value="option1">
+                                            <label for="option1">No</label>
                                         </div>
                                         <div class="audit-option qc-option2">
-                                            <input id="option25" type="radio" name="group" value="option1">
-                                            <label for="option25">NA</label>
+                                            <input ng-click="radio = 1" id="option1" type="radio" name="group" value="option1">
+                                            <label for="option1">NA</label>
                                         </div>
                                     </form>
                                 </div>
@@ -305,12 +294,12 @@
                                     <p class="client-label">Number (List A)</p>
                                     <form action="#">
                                         <div class="audit-option qc-option">
-                                            <input id="option26" type="radio" name="group" value="option1">
-                                            <label for="option26">Yes</label>
+                                            <input ng-click="radio = 1" id="option1" type="radio" name="group" value="option1">
+                                            <label for="option1">Yes</label>
                                         </div>
                                         <div class="audit-option qc-option">
-                                            <input id="option27" type="radio" name="group" value="option1">
-                                            <label for="option27">No</label>
+                                            <input ng-click="radio = 1" id="option1" type="radio" name="group" value="option1">
+                                            <label for="option1">No</label>
                                         </div>
                                     </form>
                                 </div>
@@ -318,12 +307,12 @@
                                     <p class="client-label">Was list C used</p>
                                     <form action="#">
                                         <div class="audit-option qc-option">
-                                            <input id="option28" type="radio" name="group" value="option1">
-                                            <label for="option28">Yes</label>
+                                            <input ng-click="radio = 1" id="option1" type="radio" name="group" value="option1">
+                                            <label for="option1">Yes</label>
                                         </div>
                                         <div class="audit-option qc-option">
-                                            <input id="option29" type="radio" name="group" value="option1">
-                                            <label for="option29">No</label>
+                                            <input ng-click="radio = 1" id="option1" type="radio" name="group" value="option1">
+                                            <label for="option1">No</label>
                                         </div>
                                     </form>
                                 </div>
@@ -333,27 +322,22 @@
                                     <p class="client-label">Expiration (List A)</p>
                                     <form action="#">
                                         <div class="audit-option qc-option2">
-                                            <input id="option30" type="radio" name="group" value="option1">
-                                            <label for="option30">Yes</label>
+                                            <input ng-click="radio = 1" id="option1" type="radio" name="group" value="option1">
+                                            <label for="option1">Yes</label>
                                         </div>
                                         <div class="audit-option qc-option2">
-                                            <input id="option31" type="radio" name="group" value="option1">
-                                            <label for="option31">No</label>
+                                            <input ng-click="radio = 1" id="option1" type="radio" name="group" value="option1">
+                                            <label for="option1">No</label>
                                         </div>
                                         <div class="audit-option qc-option2">
-                                            <input id="option32" type="radio" name="group" value="option1">
-                                            <label for="option32">NA</label>
+                                            <input ng-click="radio = 1" id="option1" type="radio" name="group" value="option1">
+                                            <label for="option1">NA</label>
                                         </div>
                                     </form>
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="form-used4" class="client-label padding-left">Document used (List C)</label>
-                                    <select id="form-used4" class="qc-select">
-                                        <option value="Choose client">Enter date of expiration</option>
-                                        <option value="Choose client1">Enter date of expiration</option>
-                                        <option value="Choose client2">Enter date of expiration</option>
-                                        <option value="Choose client3">Enter date of expiration</option>
-                                    </select>
+                                    <label for="form-used" class="client-label padding-left">Document used (List C)</label>
+                                    <input type="date" id="form-used" class="qc-date">
                                 </div>
                             </div>
                             <div class="row">
@@ -361,12 +345,12 @@
                                     <p class="client-label">Was list B used</p>
                                     <form action="#">
                                         <div class="audit-option qc-option">
-                                            <input id="option33" type="radio" name="group" value="option1">
-                                            <label for="option33">Yes</label>
+                                            <input ng-click="radio = 1" id="option1" type="radio" name="group" value="option1">
+                                            <label for="option1">Yes</label>
                                         </div>
                                         <div class="audit-option qc-option">
-                                            <input id="option34" type="radio" name="group" value="option1">
-                                            <label for="option34">No</label>
+                                            <input ng-click="radio = 1" id="option1" type="radio" name="group" value="option1">
+                                            <label for="option1">No</label>
                                         </div>
                                     </form>
                                 </div>
@@ -374,36 +358,31 @@
                                     <p class="client-label">Issuing authority (List C)</p>
                                     <form action="#">
                                         <div class="audit-option qc-option">
-                                            <input id="option35" type="radio" name="group" value="option1">
-                                            <label for="option35">Yes</label>
+                                            <input ng-click="radio = 1" id="option1" type="radio" name="group" value="option1">
+                                            <label for="option1">Yes</label>
                                         </div>
                                         <div class="audit-option qc-option">
-                                            <input id="option36" type="radio" name="group" value="option1">
-                                            <label for="option36">No</label>
+                                            <input ng-click="radio = 1" id="option1" type="radio" name="group" value="option1">
+                                            <label for="option1">No</label>
                                         </div>
                                     </form>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <label for="form-used5" class="client-label padding-left">Document used (List B)</label>
-                                    <select id="form-used5" class="qc-select">
-                                        <option value="Choose client">Enter date of expiration</option>
-                                        <option value="Choose client1">Enter date of expiration</option>
-                                        <option value="Choose client2">Enter date of expiration</option>
-                                        <option value="Choose client3">Enter date of expiration</option>
-                                    </select>
+                                    <label for="form-used" class="client-label padding-left">Document used (List B)</label>
+                                    <input type="date" id="form-used" class="qc-date">
                                 </div>
                                 <div class="col-md-6">
                                     <p class="client-label">Number (List C)</p>
                                     <form action="#">
                                         <div class="audit-option qc-option">
-                                            <input id="option37" type="radio" name="group" value="option1">
-                                            <label for="option37">Yes</label>
+                                            <input ng-click="radio = 1" id="option1" type="radio" name="group" value="option1">
+                                            <label for="option1">Yes</label>
                                         </div>
                                         <div class="audit-option qc-option">
-                                            <input id="option38" type="radio" name="group" value="option1">
-                                            <label for="option38">No</label>
+                                            <input ng-click="radio = 1" id="option1" type="radio" name="group" value="option1">
+                                            <label for="option1">No</label>
                                         </div>
                                     </form>
                                 </div>
@@ -413,12 +392,12 @@
                                     <p class="client-label">Issuing authority (List B)</p>
                                     <form action="#">
                                         <div class="audit-option qc-option">
-                                            <input id="option39" type="radio" name="group" value="option1">
-                                            <label for="option39">Yes</label>
+                                            <input ng-click="radio = 1" id="option1" type="radio" name="group" value="option1">
+                                            <label for="option1">Yes</label>
                                         </div>
                                         <div class="audit-option qc-option">
-                                            <input id="option40" type="radio" name="group" value="option1">
-                                            <label for="option40">No</label>
+                                            <input ng-click="radio = 1" id="option1" type="radio" name="group" value="option1">
+                                            <label for="option1">No</label>
                                         </div>
                                     </form>
                                 </div>
@@ -426,16 +405,16 @@
                                     <p class="client-label">Expiration (List C)</p>
                                     <form action="#">
                                         <div class="audit-option qc-option2">
-                                            <input id="option41" type="radio" name="group" value="option1">
-                                            <label for="option41">Yes</label>
+                                            <input ng-click="radio = 1" id="option1" type="radio" name="group" value="option1">
+                                            <label for="option1">Yes</label>
                                         </div>
                                         <div class="audit-option qc-option2">
-                                            <input id="option42" type="radio" name="group" value="option1">
-                                            <label for="option42">No</label>
+                                            <input ng-click="radio = 1" id="option1" type="radio" name="group" value="option1">
+                                            <label for="option1">No</label>
                                         </div>
                                         <div class="audit-option qc-option2">
-                                            <input id="option43" type="radio" name="group" value="option1">
-                                            <label for="option43">NA</label>
+                                            <input ng-click="radio = 1" id="option1" type="radio" name="group" value="option1">
+                                            <label for="option1">NA</label>
                                         </div>
                                     </form>
                                 </div>
@@ -445,7 +424,8 @@
                 </div>
                 <hr>
                 <div class="buttons button-save">
-                    <input type="submit" class="form-button i9-submit-btn" value="Save">
+                    <input type="submit" class="form-button i9-submit-btn" value="Reviewed">
+                    <input type="submit" class="form-button i9-submit-btn" value="On Hold">
                 </div>   
             </div> 
         </div>
